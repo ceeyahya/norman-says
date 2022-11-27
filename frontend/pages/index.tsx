@@ -18,14 +18,16 @@ const Home: NextPage = () => {
 		formState,
 		formState: { errors },
 	} = useForm<Headline>({ mode: 'onChange' });
-
+	const [loading, setLoading] = useState<boolean>(false);
 	const [prediction, setPrediction] = useState<1 | 0 | undefined>(undefined);
 
 	const onSubmit: SubmitHandler<Headline> = async (data) => {
+		setLoading(true);
 		const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/predict`, {
 			text: data.text,
 		});
 		setPrediction(res.data.prediction[0]);
+		setLoading(false);
 	};
 
 	return (
@@ -76,12 +78,12 @@ const Home: NextPage = () => {
 					</form>
 					<div className='border-l border-gray-300 dark:border-zinc-800 dark:bg-zinc-900 relative bg-gray-100 w-full h-96 px-4 py-4'>
 						<div>
-							<Prediction prediction={prediction} />
+							<Prediction prediction={prediction} loading={loading} />
 						</div>
 						<div className='absolute -bottom-6 sm:-bottom-9 -right-0'>
 							<svg
 								style={{ display: 'block', transform: 'scale(-1,1)' }}
-								className='dark:text-zinc-800 text-zinc-300 h-36 w-36 sm:h-56 sm:w-56'
+								className='dark:text-zinc-800 opacity-30 text-zinc-300 h-36 w-36 sm:h-56 sm:w-56'
 								viewBox='0 0 24 24'>
 								<path
 									fill='currentColor'
