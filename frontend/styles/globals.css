@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Redaction';
+	font-weight: 400;
+	src: url('/fonts/redaction/Redaction35-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Redaction';
+	font-weight: 400;
+	font-style: italic;
+	src: url('/fonts/redaction/Redaction35-Italic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Redaction';
+	font-weight: 700;
+	src: url('/fonts/redaction/Redaction35-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Terminal Grotesque';
+	font-weight: 400;
+	src: url('/fonts/terminal-grotesque/terminal-grotesque.ttf') format('truetype');
+}
+
+body {
+	@apply dark:bg-black bg-white
+}
+
+form.hide-submit input[type="submit"] {
+	display: none;
+}
+
+.background-animate {
+    background-size: 400%;
+
+    -webkit-animation: animate-gradient 3s ease infinite;
+    -moz-animation: animate-gradient 3s ease infinite;
+    animation: animate-gradient 3s ease infinite;
+}
+
+@keyframes animate-gradient{
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
