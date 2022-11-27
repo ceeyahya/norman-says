@@ -92,15 +92,19 @@ npm run dev
 cd backend/
 ```
 
-2. Install dependencies using `pip` or `conda`
+2.  Install dependencies.
 
-```console
-pip install requirements.txt
-```
+    - Option 1 : using `pip`
 
-2. (Alternative) use a premade conda environment, the following packages are required: `pandas`, `numpy`, `scikit-learn`, `fastapi`, `uvicorn`, `joblib`.
+          pip install requirements.txt
 
-3. Run the server
+    - Option 2: using `poetry`
+
+          poetry install
+
+    - Option 3: existing `conda` environment. The following packages are required: `pandas`, `numpy`, `scikit-learn`, `fastapi`, `uvicorn`, `joblib`.
+
+3.  Run the server
 
 ```console
 uvicorn main:app --reload
