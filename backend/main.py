@@ -1,9 +1,9 @@
-import pickle
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from joblib import load
 
-svm_clickbait_clf = pickle.load(open("./model/svm_clickbait_clf.sav", "rb"))
+svm_clickbait_clf = load("svm_clickbait_clf.joblib")
 
 
 class Headline(BaseModel):
