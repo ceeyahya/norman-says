@@ -3,7 +3,7 @@ from joblib import load
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
-svm_clickbait_clf = load("./model/svm_clickbait_clf.joblib")
+svm_clickbait_clf = load("./model/svm_clickbait.joblib")
 
 
 class Headline(BaseModel):
