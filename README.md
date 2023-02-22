@@ -14,7 +14,7 @@ As crude as it may sound not all articles are worth our time, and we're not ever
 
 > **NOTE**
 > This README only aims to provide a short introduction to the project, a more detailed write up is available on my portoflio
-> [https://chahineyahya.dev/projects/norman-says](https://chahineyahya.dev/projects/norman-says). _(Currently being written)_
+> [https://chahineyahya.dev/projects/norman-says](https://chahineyahya.dev/projects/norman-says).
 
 ## Analysis
 
