@@ -1,6 +1,7 @@
 [![Mastodon](https://img.shields.io/badge/Mastodon-5c4bdf?style=for-the-badge&logo=Mastodon&logoColor=ffffff&link=https://fosstodon.org/@hya)](https://fosstodon.org/@hya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=ffffff&link=https://www.linkedin.com/in/yahya-chahine/)](https://www.linkedin.com/in/yahya-chahine/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-6366f1?style=for-the-badge&logo=Internet-Explorer&logoColor=ffffff&link=https://www.chahineyahya.dev)](https://www.chahineyahya.dev)
+[![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white&link=https://colab.research.google.com/github/ceeyahya/norman-says/blob/main/backend/analysis.ipynb)](https://colab.research.google.com/github/ceeyahya/norman-says/blob/main/backend/analysis.ipynb)
 
 # Norman Says: Clickbait Detector
 
